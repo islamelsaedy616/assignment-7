@@ -1,0 +1,1139 @@
+body {
+  background-color: #f5f5f5;
+}
+#navbarNavDropdown li a {
+  position: relative;
+}
+li {
+  list-style: none;
+}
+.hover-line li a::before {
+  content: "";
+  width: 0;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 3px;
+  left: 8px;
+  transition: 0.2s;
+}
+.hover-line li a:hover::before {
+  width: 60%;
+}
+.bg-hero {
+  height: calc(100vh - 72px);
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.bg-hero h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+}
+.bg-hero p {
+  font-size: 2.5rem;
+}
+.bg-hero p::after {
+  content: "|";
+  animation: name-ani 7s infinite;
+}
+@keyframes name-ani {
+  0% {
+    content: "D|";
+  }
+  2% {
+    content: "De|";
+  }
+  4% {
+    content: "Des|";
+  }
+  6% {
+    content: "Desi|";
+  }
+  8% {
+    content: "Desig|";
+  }
+  10% {
+    content: "Design|";
+  }
+  12% {
+    content: "Designe|";
+  }
+  14% {
+    content: "Designer|";
+  }
+  15% {
+    content: "Designer|";
+  }
+  16% {
+    content: "Designe|";
+  }
+  18% {
+    content: "Design|";
+  }
+  20% {
+    content: "Desig|";
+  }
+  22% {
+    content: "Desi|";
+  }
+  24% {
+    content: "Des|";
+  }
+  26% {
+    content: "De|";
+  }
+
+  28% {
+    content: "Dev|";
+  }
+  30% {
+    content: "Deve|";
+  }
+  32% {
+    content: "Devel|";
+  }
+  34% {
+    content: "Develo|";
+  }
+  36% {
+    content: "Develop|";
+  }
+  38% {
+    content: "Develope|";
+  }
+  40% {
+    content: "Developer|";
+  }
+  41% {
+    content: "Developer|";
+  }
+  42% {
+    content: "Develope|";
+  }
+  44% {
+    content: "Develop|";
+  }
+  46% {
+    content: "Develo|";
+  }
+  48% {
+    content: "Devel|";
+  }
+  50% {
+    content: "Deve|";
+  }
+  52% {
+    content: "Dev|";
+  }
+  54% {
+    content: "De|";
+  }
+  56% {
+    content: "D|";
+  }
+  58% {
+    content: "|";
+  }
+
+  60% {
+    content: "F|";
+  }
+  62% {
+    content: "Fr|";
+  }
+  64% {
+    content: "Fre|";
+  }
+  66% {
+    content: "Free|";
+  }
+  68% {
+    content: "Freel|";
+  }
+  70% {
+    content: "Freela|";
+  }
+  72% {
+    content: "Freelan|";
+  }
+  74% {
+    content: "Freelanc|";
+  }
+  76% {
+    content: "Freelance|";
+  }
+  78% {
+    content: "Freelancer|";
+  }
+  79% {
+    content: "Freelancer|";
+  }
+  80% {
+    content: "Freelance|";
+  }
+  82% {
+    content: "Freelanc|";
+  }
+  84% {
+    content: "Freelan|";
+  }
+  86% {
+    content: "Freela|";
+  }
+  88% {
+    content: "Freel|";
+  }
+  90% {
+    content: "Free|";
+  }
+  92% {
+    content: "Fre|";
+  }
+  94% {
+    content: "Fr|";
+  }
+  96% {
+    content: "F|";
+  }
+  100% {
+    content: "|";
+  }
+}
+.line-b {
+  position: relative;
+  width: fit-content;
+}
+.line-b::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 3px;
+  background-color: #0078ff;
+  bottom: 0;
+  left: 0;
+}
+.line-p {
+  position: relative;
+  width: fit-content;
+  padding-bottom: 16px;
+}
+.line-p::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 5px;
+  background-color: #0078ff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  border: 10px solid #0078ff;
+  transition: 0.6s;
+}
+.icon:hover {
+  border: 10px solid #cde1f8;
+  background-color: #0078ff;
+  color: white;
+}
+.counter-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 8px solid #cde1f8;
+  transition: 0.6s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counter::after {
+  content: "";
+  animation: count 3s infinite;
+}
+@keyframes count {
+  0.0% {
+    content: "1";
+  }
+  0.4% {
+    content: "2";
+  }
+  0.8% {
+    content: "3";
+  }
+  1.2% {
+    content: "4";
+  }
+  1.6% {
+    content: "5";
+  }
+  2.0% {
+    content: "6";
+  }
+  2.4% {
+    content: "7";
+  }
+  2.8% {
+    content: "8";
+  }
+  3.2% {
+    content: "9";
+  }
+  3.6% {
+    content: "10";
+  }
+  4.0% {
+    content: "11";
+  }
+  4.4% {
+    content: "12";
+  }
+  4.8% {
+    content: "13";
+  }
+  5.2% {
+    content: "14";
+  }
+  5.6% {
+    content: "15";
+  }
+  6.0% {
+    content: "16";
+  }
+  6.4% {
+    content: "17";
+  }
+  6.8% {
+    content: "18";
+  }
+  7.2% {
+    content: "19";
+  }
+  7.6% {
+    content: "20";
+  }
+  8.0% {
+    content: "21";
+  }
+  8.4% {
+    content: "22";
+  }
+  8.8% {
+    content: "23";
+  }
+  9.2% {
+    content: "24";
+  }
+  9.6% {
+    content: "25";
+  }
+  10.0% {
+    content: "26";
+  }
+  10.4% {
+    content: "27";
+  }
+  10.8% {
+    content: "28";
+  }
+  11.2% {
+    content: "29";
+  }
+  11.6% {
+    content: "30";
+  }
+  12.0% {
+    content: "31";
+  }
+  12.4% {
+    content: "32";
+  }
+  12.9% {
+    content: "33";
+  }
+  13.3% {
+    content: "34";
+  }
+  13.7% {
+    content: "35";
+  }
+  14.1% {
+    content: "36";
+  }
+  14.5% {
+    content: "37";
+  }
+  14.9% {
+    content: "38";
+  }
+  15.3% {
+    content: "39";
+  }
+  15.7% {
+    content: "40";
+  }
+  16.1% {
+    content: "41";
+  }
+  16.5% {
+    content: "42";
+  }
+  16.9% {
+    content: "43";
+  }
+  17.3% {
+    content: "44";
+  }
+  17.7% {
+    content: "45";
+  }
+  18.1% {
+    content: "46";
+  }
+  18.5% {
+    content: "47";
+  }
+  18.9% {
+    content: "48";
+  }
+  19.3% {
+    content: "49";
+  }
+  19.7% {
+    content: "50";
+  }
+  20.1% {
+    content: "51";
+  }
+  20.5% {
+    content: "52";
+  }
+  20.9% {
+    content: "53";
+  }
+  21.3% {
+    content: "54";
+  }
+  21.7% {
+    content: "55";
+  }
+  22.1% {
+    content: "56";
+  }
+  22.5% {
+    content: "57";
+  }
+  22.9% {
+    content: "58";
+  }
+  23.3% {
+    content: "59";
+  }
+  23.7% {
+    content: "60";
+  }
+  24.1% {
+    content: "61";
+  }
+  24.5% {
+    content: "62";
+  }
+  24.9% {
+    content: "63";
+  }
+  25.3% {
+    content: "64";
+  }
+  25.7% {
+    content: "65";
+  }
+  26.1% {
+    content: "66";
+  }
+  26.5% {
+    content: "67";
+  }
+  26.9% {
+    content: "68";
+  }
+  27.3% {
+    content: "69";
+  }
+  27.7% {
+    content: "70";
+  }
+  28.1% {
+    content: "71";
+  }
+  28.5% {
+    content: "72";
+  }
+  28.9% {
+    content: "73";
+  }
+  29.3% {
+    content: "74";
+  }
+  29.7% {
+    content: "75";
+  }
+  30.1% {
+    content: "76";
+  }
+  30.5% {
+    content: "77";
+  }
+  30.9% {
+    content: "78";
+  }
+  31.3% {
+    content: "79";
+  }
+  31.7% {
+    content: "80";
+  }
+  32.1% {
+    content: "81";
+  }
+  32.5% {
+    content: "82";
+  }
+  32.9% {
+    content: "83";
+  }
+  33.3% {
+    content: "84";
+  }
+  33.7% {
+    content: "85";
+  }
+  34.1% {
+    content: "86";
+  }
+  34.5% {
+    content: "87";
+  }
+  34.9% {
+    content: "88";
+  }
+  35.3% {
+    content: "89";
+  }
+  35.7% {
+    content: "90";
+  }
+  36.1% {
+    content: "91";
+  }
+  36.5% {
+    content: "92";
+  }
+  36.9% {
+    content: "93";
+  }
+  37.3% {
+    content: "94";
+  }
+  37.8% {
+    content: "95";
+  }
+  38.2% {
+    content: "96";
+  }
+  38.6% {
+    content: "97";
+  }
+  39.0% {
+    content: "98";
+  }
+  39.4% {
+    content: "99";
+  }
+  39.8% {
+    content: "100";
+  }
+  40.2% {
+    content: "101";
+  }
+  40.6% {
+    content: "102";
+  }
+  41.0% {
+    content: "103";
+  }
+  41.4% {
+    content: "104";
+  }
+  41.8% {
+    content: "105";
+  }
+  42.2% {
+    content: "106";
+  }
+  42.6% {
+    content: "107";
+  }
+  43.0% {
+    content: "108";
+  }
+  43.4% {
+    content: "109";
+  }
+  43.8% {
+    content: "110";
+  }
+  44.2% {
+    content: "111";
+  }
+  44.6% {
+    content: "112";
+  }
+  45.0% {
+    content: "113";
+  }
+  45.4% {
+    content: "114";
+  }
+  45.8% {
+    content: "115";
+  }
+  46.2% {
+    content: "116";
+  }
+  46.6% {
+    content: "117";
+  }
+  47.0% {
+    content: "118";
+  }
+  47.4% {
+    content: "119";
+  }
+  47.8% {
+    content: "120";
+  }
+  48.2% {
+    content: "121";
+  }
+  48.6% {
+    content: "122";
+  }
+  49.0% {
+    content: "123";
+  }
+  49.4% {
+    content: "124";
+  }
+  49.8% {
+    content: "125";
+  }
+  50.2% {
+    content: "126";
+  }
+  50.6% {
+    content: "127";
+  }
+  51.0% {
+    content: "128";
+  }
+  51.4% {
+    content: "129";
+  }
+  51.8% {
+    content: "130";
+  }
+  52.2% {
+    content: "131";
+  }
+  52.6% {
+    content: "132";
+  }
+  53.0% {
+    content: "133";
+  }
+  53.4% {
+    content: "134";
+  }
+  53.8% {
+    content: "135";
+  }
+  54.2% {
+    content: "136";
+  }
+  54.6% {
+    content: "137";
+  }
+  55.0% {
+    content: "138";
+  }
+  55.4% {
+    content: "139";
+  }
+  55.8% {
+    content: "140";
+  }
+  56.2% {
+    content: "141";
+  }
+  56.6% {
+    content: "142";
+  }
+  57.0% {
+    content: "143";
+  }
+  57.4% {
+    content: "144";
+  }
+  57.8% {
+    content: "145";
+  }
+  58.2% {
+    content: "146";
+  }
+  58.6% {
+    content: "147";
+  }
+  59.0% {
+    content: "148";
+  }
+  59.4% {
+    content: "149";
+  }
+  59.8% {
+    content: "150";
+  }
+  60.2% {
+    content: "151";
+  }
+  60.6% {
+    content: "152";
+  }
+  61.0% {
+    content: "153";
+  }
+  61.4% {
+    content: "154";
+  }
+  61.8% {
+    content: "155";
+  }
+  62.2% {
+    content: "156";
+  }
+  62.7% {
+    content: "157";
+  }
+  63.1% {
+    content: "158";
+  }
+  63.5% {
+    content: "159";
+  }
+  63.9% {
+    content: "160";
+  }
+  64.3% {
+    content: "161";
+  }
+  64.7% {
+    content: "162";
+  }
+  65.1% {
+    content: "163";
+  }
+  65.5% {
+    content: "164";
+  }
+  65.9% {
+    content: "165";
+  }
+  66.3% {
+    content: "166";
+  }
+  66.7% {
+    content: "167";
+  }
+  67.1% {
+    content: "168";
+  }
+  67.5% {
+    content: "169";
+  }
+  67.9% {
+    content: "170";
+  }
+  68.3% {
+    content: "171";
+  }
+  68.7% {
+    content: "172";
+  }
+  69.1% {
+    content: "173";
+  }
+  69.5% {
+    content: "174";
+  }
+  69.9% {
+    content: "175";
+  }
+  70.3% {
+    content: "176";
+  }
+  70.7% {
+    content: "177";
+  }
+  71.1% {
+    content: "178";
+  }
+  71.5% {
+    content: "179";
+  }
+  71.9% {
+    content: "180";
+  }
+  72.3% {
+    content: "181";
+  }
+  72.7% {
+    content: "182";
+  }
+  73.1% {
+    content: "183";
+  }
+  73.5% {
+    content: "184";
+  }
+  73.9% {
+    content: "185";
+  }
+  74.3% {
+    content: "186";
+  }
+  74.7% {
+    content: "187";
+  }
+  75.1% {
+    content: "188";
+  }
+  75.5% {
+    content: "189";
+  }
+  75.9% {
+    content: "190";
+  }
+  76.3% {
+    content: "191";
+  }
+  76.7% {
+    content: "192";
+  }
+  77.1% {
+    content: "193";
+  }
+  77.5% {
+    content: "194";
+  }
+  77.9% {
+    content: "195";
+  }
+  78.3% {
+    content: "196";
+  }
+  78.7% {
+    content: "197";
+  }
+  79.1% {
+    content: "198";
+  }
+  79.5% {
+    content: "199";
+  }
+  79.9% {
+    content: "200";
+  }
+  80.3% {
+    content: "201";
+  }
+  80.7% {
+    content: "202";
+  }
+  81.1% {
+    content: "203";
+  }
+  81.5% {
+    content: "204";
+  }
+  81.9% {
+    content: "205";
+  }
+  82.3% {
+    content: "206";
+  }
+  82.7% {
+    content: "207";
+  }
+  83.1% {
+    content: "208";
+  }
+  83.5% {
+    content: "209";
+  }
+  83.9% {
+    content: "210";
+  }
+  84.3% {
+    content: "211";
+  }
+  84.7% {
+    content: "212";
+  }
+  85.1% {
+    content: "213";
+  }
+  85.5% {
+    content: "214";
+  }
+  85.9% {
+    content: "215";
+  }
+  86.3% {
+    content: "216";
+  }
+  86.7% {
+    content: "217";
+  }
+  87.1% {
+    content: "218";
+  }
+  87.6% {
+    content: "219";
+  }
+  88.0% {
+    content: "220";
+  }
+  88.4% {
+    content: "221";
+  }
+  88.8% {
+    content: "222";
+  }
+  89.2% {
+    content: "223";
+  }
+  89.6% {
+    content: "224";
+  }
+  90.0% {
+    content: "225";
+  }
+  90.4% {
+    content: "226";
+  }
+  90.8% {
+    content: "227";
+  }
+  91.2% {
+    content: "228";
+  }
+  91.6% {
+    content: "229";
+  }
+  92.0% {
+    content: "230";
+  }
+  92.4% {
+    content: "231";
+  }
+  92.8% {
+    content: "232";
+  }
+  93.2% {
+    content: "233";
+  }
+  93.6% {
+    content: "234";
+  }
+  94.0% {
+    content: "235";
+  }
+  94.4% {
+    content: "236";
+  }
+  94.8% {
+    content: "237";
+  }
+  95.2% {
+    content: "238";
+  }
+  95.6% {
+    content: "239";
+  }
+  96.0% {
+    content: "240";
+  }
+  96.4% {
+    content: "241";
+  }
+  96.8% {
+    content: "242";
+  }
+  97.2% {
+    content: "243";
+  }
+  97.6% {
+    content: "244";
+  }
+  98.0% {
+    content: "245";
+  }
+  98.4% {
+    content: "246";
+  }
+  98.8% {
+    content: "247";
+  }
+  99.2% {
+    content: "248";
+  }
+  99.6% {
+    content: "249";
+  }
+  100.0% {
+    content: "250";
+  }
+  100% {
+    content: "1";
+  }
+}
+.bg-counter {
+  background-image: linear-gradient(
+      rgb(0, 119, 255, 0.7),
+      rgba(0, 119, 255, 0.7)
+    ),
+    url(../img/counters-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.size-p {
+  font-size: 0.8125rem;
+}
+.plus-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #0078ff;
+}
+.img {
+  transition: 0.6s ease-in-out;
+}
+.hover-img:hover .img {
+  transform: scale(1.3);
+}
+.bg-carousel {
+  background-image: linear-gradient(
+      rgb(0, 119, 255, 0.7),
+      rgba(0, 119, 255, 0.7)
+    ),
+    url(../img/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.bottom-span {
+  bottom: -12px;
+  padding: 2px 12px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+.p-carousel {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.875rem;
+}
+.img-carousel {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.blog-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.bg-contact {
+  background-image: linear-gradient(
+      rgb(0, 119, 255, 0.7),
+      rgba(0, 119, 255, 0.7)
+    ),
+    url(../img/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.line-h {
+  position: relative;
+  width: fit-content;
+}
+
+.line-h::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3.5px;
+  background-color: #0078ff;
+  bottom: 0;
+  left: 0;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 0.875rem;
+}
+.social-icon {
+  width: 45px;
+  height: 45px;
+  transition: 0.4s;
+  border: 3px solid #0078ff;
+}
+.social-icon:hover {
+  background-color: #0078ff;
+  border: 3px solid #c6ddf8;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-hero h1 {
+    font-size: 3rem;
+  }
+  .bg-hero p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  .hover-line li a::before {
+    content: none;
+  }
+}
